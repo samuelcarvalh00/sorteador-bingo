@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="body">
+        <h1>Sorteador de Números</h1>
+        <h2>Escolha os números de sua preferência para sortear!</h2>
+        <div class="input-group">
+            <label for="quantity">NÚMEROS A SORTEAR:</label>  <!--quantity no js-->
+            <input type="number" id="quantity" min="1" max="100" value="1">
+        </div>
+
+        <div class="input-group">
+            <label for="min">---INTERVALO MÍNIMO:</label> <!--min no js-->
+            <input type="number" id="min" value="1">
+            
+        </div>
+
+        <div class="input-group">
+            <label for="max">---INTERVALO MÁXIMO:</label> <!--max no js-->
+            <input type="number" id="max" value="100">
+        </div>
+
+        <button onclick="sortear()">Sortear</button>
+
+        <div id="result" class="result"></div> <!--result no js-->
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
